@@ -1,20 +1,9 @@
-
 @import url('https://fonts.cdnfonts.com/css/montserrat');
-/*body{*/
-/*}*/
 
 *{
     font-family: montserrat;
 }
 
-@keyframes slideInLeft {
-    0% {
-        width: 1%;
-    }
-    100% {
-        width: 25%;
-    }
-}
 
 .editor{
     height: 621px;
@@ -27,7 +16,11 @@
 .page-heading{
     color: #FFFDFB;
     text-shadow: 1px 1px 1px #FFFDFB;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 2s steps(30) 0.5s 1 normal;
 }
+
 
 .flex{
     display: flex;
@@ -40,6 +33,14 @@
     height: 2px;
     width: 25%;
     background: #FFFDFB;
-    animation: 1s 0s 1 slideInLeft;
+    animation: slideToMaxWidth 2s;
 }
+
+canvas {
+    overflow: hidden;
+    width:100vw;
+    height:100vh;
+    background-color:black;
+}
+
 
