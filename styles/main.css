@@ -1,0 +1,45 @@
+
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+/*body{*/
+/*}*/
+
+*{
+    font-family: montserrat;
+}
+
+@keyframes slideInLeft {
+    0% {
+        width: 1%;
+    }
+    100% {
+        width: 25%;
+    }
+}
+
+.editor{
+    height: 621px;
+    width: 58%;
+    background: #292D3E;
+    box-shadow: 0px -25px 20px -20px #292D3E, 25px 0px 20px -20px #292D3E, 0px 25px 20px -20px #292D3E, -25px 0px 20px -20px #292D3E;
+    border-radius: 24px;
+}
+
+.page-heading{
+    color: #FFFDFB;
+    text-shadow: 1px 1px 1px #FFFDFB;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.line{
+    border-radius: 38px;
+    height: 2px;
+    width: 25%;
+    background: #FFFDFB;
+    animation: 1s 0s 1 slideInLeft;
+}
+
